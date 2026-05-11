@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #0D1B2A;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 2fr;
+    padding: 10px;
+    gap: 10px;
+
+    grid-template-areas: 
+    "header header rightdiv"
+    "lefttop lefttop rightdiv" 
+    "leftbtm1 leftbtm2 rightdiv"
+    ;
+}
+
+header{
+    background-color: #1B263B;
+    grid-area: header;
+}
+
+.lefttop{
+    background-color: #415A77;
+    grid-area: lefttop;
+}
+
+.right{
+    background-color: #778DA9;
+    grid-area: rightdiv;
+}
+
+.leftbtm1{
+    background-color: #E0E1DD;
+    grid-area: leftbtm1;
+}
+
+.leftbtm2{
+    background-color: #6f706d;
+    grid-area: leftbtm2;
+}
