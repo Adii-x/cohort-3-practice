@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 html , body{
     height: 100%;
@@ -10,7 +11,7 @@ html , body{
 main{
     height: 100%;
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     display: grid;
     gap: 20px;
     grid-template-columns: 0.6fr 0.6fr 0.5fr 0.7fr;
@@ -21,15 +22,27 @@ main{
     "mid1 mid2 mid3 rightbtm"
     "leftbtm leftbtm mid3 rightbtm"
     ;
+    background-color: #312E3F;
 }
 
 .box{
-    background-color: red;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .topleft{
     grid-area: topleft;
     background-color: #5028CE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.topleft sup{
+    color: #E9E3FA;
 }
 
 .topcenter{
@@ -40,6 +53,13 @@ main{
 .myself{
     grid-area: myself;
     background-color: #E9E3FA;
+}
+
+.myself img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-position: top;
 }
 
 .mid1{
