@@ -29,32 +29,40 @@ main{
 
 .topleft{
     grid-area: topleft;
+    background-color: #5028CE;
 }
 
 .topcenter{
     grid-area: topcenter;
+    background-color: #E9E3FA;
 }
 
 .myself{
     grid-area: myself;
+    background-color: #E9E3FA;
 }
 
 .mid1{
     grid-area: mid1;
+    background-color: #E9E3FA;
 }
 
 .mid2{
     grid-area: mid2;
+    background-color: #E9E3FA;
 }
 
 .mid3{
     grid-area: mid3;
+    background-color: #E9E3FA;
 }
 
 .leftbtm{
     grid-area: leftbtm;
+    background-color: #5028CE;
 }
 
 .rightbtm{
     grid-area: rightbtm;
+    background-color: #5028CE;
 }
