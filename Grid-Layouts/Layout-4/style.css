@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 0.6fr 0.6fr 0.5fr 0.7fr;
+    grid-template-rows: 1.8fr 1.5fr 0.4fr 2.1fr;
+    grid-template-areas: 
+    "topleft topcenter topcenter myself"
+    "mid1 mid2 mid3 myself"
+    "mid1 mid2 mid3 rightbtm"
+    "leftbtm leftbtm mid3 rightbtm"
+    ;
+}
+
+.box{
+    background-color: red;
+}
+
+.topleft{
+    grid-area: topleft;
+}
+
+.topcenter{
+    grid-area: topcenter;
+}
+
+.myself{
+    grid-area: myself;
+}
+
+.mid1{
+    grid-area: mid1;
+}
+
+.mid2{
+    grid-area: mid2;
+}
+
+.mid3{
+    grid-area: mid3;
+}
+
+.leftbtm{
+    grid-area: leftbtm;
+}
+
+.rightbtm{
+    grid-area: rightbtm;
+}
