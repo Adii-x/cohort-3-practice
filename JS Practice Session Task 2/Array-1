@@ -1,0 +1,245 @@
+// // // // Arrays - 20 Questions 
+ 
+// // // // ============== EASY ================
+
+// // // // Question 1 - 
+
+// // // let prices = [100,250,500,150,700];
+
+// // // let expensiveProducts = prices.filter(val => val > 300);
+
+// // // console.log(expensiveProducts);
+
+
+// // // // Question 2 -
+
+// // // let students = ["Aman","Ritik","Priya","Rahul"];
+
+// // // console.log(`Last Student - ${students[students.length - 1]}`);
+
+
+// // // // Question 3 - 
+
+// // // let products = ["Laptop","Mouse","Keyboard"];
+
+// // // products.push('Monitor')
+// // // console.log(products)
+
+
+// // // // Question 4 - 
+
+// // // let notifications = [
+// // //     "Order Placed",
+// // //     "Order Shipped",
+// // //     "Order Delivered"
+// // // ];
+
+// // // notifications.pop();
+// // // console.log(notifications);
+
+ 
+// // // // Question 5 - 
+
+// // // let users = ["Aman","Ritik","Priya"];
+
+// // // console.log(users.includes('Ritik'))
+
+
+// // // // Question 6 - 
+
+// // // let marks = [80, 90, 70];
+
+// // // let percentageMarks = marks.map(val => `${val}%`)
+
+// // // console.log(percentageMarks);
+
+
+// // // // Question 7 -
+
+// // // // let cart = [
+// // // //     "Mouse",
+// // // //     "Keyboard",
+// // // //     "Monitor",
+// // // //     "Laptop"
+// // // // ];
+
+// // // // console.log(`Cart Items - ${cart.length}`)
+
+
+// // // // =========== MODERATE =============
+
+// // // // Question 8 -
+
+// // let marks = [80,90,70,85,95];
+
+// // let avg = marks.reduce((acc, val) => acc + val, 0) / marks.length;
+
+// // console.log(`Avg marks - ${avg.toFixed(2)}`)
+
+
+// // // Question 9 -
+
+// // let numbers = [1,2,3,4,5,6,7,8];
+
+// // let evenNums = numbers.filter(val => val % 2 === 0)
+
+// // console.log(evenNums);
+
+
+// // // Question 10 -
+
+// // let products = [
+// //     "Laptop",
+// //     "Mouse",
+// //     "Keyboard",
+// //     "Monitor"
+// // ];
+
+// // console.log(`Index of Keyboard - ${products.findIndex(val => val === 'Keyboard')}`);
+
+
+// // // Question 11 -
+
+// // let sales = [500,700,1000,300];
+
+// // let totalRevenue = sales.reduce((acc, val) => acc + val, 0);
+
+// // console.log(`Todays total Revenue - ${totalRevenue}`);
+
+ 
+// // // Question 12 -
+
+// // let users = ["ritik","aman","priya"];
+
+// // let uppercaseUserNames = users.map(name => name.toUpperCase())
+
+// // console.log(uppercaseUserNames);
+
+
+// // // Question 13 -
+
+// // let ages = [12,15,17,19,22];
+
+// // console.log(ages.find(val => val === 18));
+
+
+// // // Quesiton 14 -
+
+// // let nums = [5,8,10,3];
+
+// // console.log(nums.every(val => val % 2 === 0))
+
+// // // ============= HARD ==================
+
+// let numbers = [1,2,3,2,4,2,5,1,1,1];
+
+// let hashArr = [0]
+
+// for(let i = 0; i < numbers.length; i++) {
+//     if(hashArr[numbers[i]]) hashArr[numbers[i]]++
+//     else hashArr[numbers[i]] = 1
+// }
+
+// let max = hashArr[0]
+// let maxIdx = 0
+
+// for(let i = 1; i < hashArr.length; i++){
+//     if(hashArr[i] > max) {
+//         max = hashArr[i] 
+//         maxIdx = i
+//     }
+// }
+
+// console.log(hashArr)
+// console.log(maxIdx)
+
+
+// // Question 16 - 
+
+// let nums = [10,50,20,80,40];
+
+// let max1 = Math.max(nums[0], nums[1]);
+// let secMax = Math.min(nums[0], nums[1]);
+
+// for(let i = 2; i < nums.length; i++){
+
+//     if(nums[i] > max1){
+//         secMax = max1;
+//         max1 = nums[i]
+//     } else if(nums[i] > secMax && secMax !== max1){
+//         secMax = nums[i]
+//     }
+
+// }
+
+// console.log(nums)
+// console.log(`Max - ${max1}`)
+// console.log(`secMax - ${secMax}`)
+
+
+// // Question 17 -
+ 
+// // O(n ^ 2) complexity
+
+// // let ids = [1,2,2,3,4,4,5,5];
+
+// // let uniqueIds = [];
+
+// // for(let i = 0; i < ids.length; i++){
+
+// //     if(!uniqueIds.includes(ids[i])) uniqueIds.push(ids[i])
+
+// // }
+
+// // console.log(uniqueIds) 
+
+// // O(n) complixity
+
+// let ids = [1,2,2,3,4,4,5,5];
+
+// let uniqueIds = [...new Set(ids)];
+
+// console.log(uniqueIds);
+
+
+// // Question 18 -
+
+// let words = [
+//     "JavaScript",
+//     "HTML",
+//     "CSS",
+//     "Programming"
+// ];
+
+// let longestWord = words[0].length;
+// let index = 0
+
+// for(let i = 1; i < words.length; i++){
+    
+//     if(words[i].length > longestWord){
+
+//         longestWord = words[i].length
+//         index = i
+
+//     }
+
+// }
+
+// console.log(`Longest word - ${words[index]}`)
+
+
+// // Question 19 - 
+
+let nums = [1,2,3,4,5];
+
+let temp = nums[nums.length - 1]
+
+for(let i = nums.length - 1; i >= 1; i--){
+
+    nums[i] = nums[i - 1]
+
+}
+
+nums[0] = temp;
+
+console.log(nums)
