@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="blur blur1"></div>
+<div class="blur blur2"></div>
+
+<div class="card">
+    <h2>Create Account</h2>
+    <p>Complete the form below</p>
+
+    <form id="myForm">
+
+        <div class="input-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="John Doe" autocomplete="off">
+            <small class="nameError"></small>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="example@gmail.com" autocomplete="off">
+            <small class="emailError"></small>
+        </div>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</div>
+
+<script src="DOM.js"></script>
+</body>
+</html>

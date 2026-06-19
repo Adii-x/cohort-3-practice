@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#111;
+    overflow:hidden;
+}
+
+/* Background Blur */
+.blur{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(120px);
+}
+
+.blur1{
+    width:260px;
+    height:260px;
+    background:#ffffff18;
+    top:8%;
+    left:12%;
+}
+
+.blur2{
+    width:300px;
+    height:300px;
+    background:#ffffff10;
+    bottom:8%;
+    right:12%;
+}
+
+/* Glass Card */
+.card{
+    width:400px;
+    padding:35px;
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;
+    box-shadow:0 8px 32px rgba(0,0,0,.45);
+}
+
+.card h2{
+    color:#fff;
+    text-align:center;
+    font-size:28px;
+    margin-bottom:6px;
+}
+
+.card p{
+    color:#aaa;
+    text-align:center;
+    font-size:14px;
+    margin-bottom:30px;
+}
+
+.input-group{
+    margin-bottom:22px;
+}
+
+label{
+    display:block;
+    color:#ddd;
+    margin-bottom:8px;
+    font-size:14px;
+}
+
+input{
+    width:100%;
+    padding:13px 16px;
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:10px;
+    color:#fff;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+input::placeholder{
+    color:#777;
+}
+
+input:focus{
+    border-color:#fff;
+    background:rgba(255,255,255,.08);
+    box-shadow:0 0 15px rgba(255,255,255,.08);
+}
+
+.error{
+    display:block;
+    color:#ff5c5c;
+    margin-top:6px;
+    font-size:13px;
+    min-height:18px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#fff;
+    color:#111;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    background:#e8e8e8;
+}
+
+button:active{
+    transform:scale(.98);
+}
